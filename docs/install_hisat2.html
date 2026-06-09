@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>download_from_ena – RNASeq_Differential_Expression</title>
+<title>install_hisat2 – RNASeq_Differential_Expression</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./download_from_ENA.html">Raw sequences to RNA counts</a></li><li class="breadcrumb-item"><a href="./download_from_ENA.html">Download FASTQ files from SRA and/or ENA</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./download_from_ENA.html">Raw sequences to RNA counts</a></li><li class="breadcrumb-item"><a href="./install_hisat2.html">Install Hisat2 for mapping</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -129,13 +129,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./download_from_ENA.html" class="sidebar-item-text sidebar-link active">
+  <a href="./download_from_ENA.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Download FASTQ files from SRA and/or ENA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./install_hisat2.html" class="sidebar-item-text sidebar-link">
+  <a href="./install_hisat2.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Install Hisat2 for mapping</span></a>
   </div>
 </li>
@@ -146,87 +146,30 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#download-fastq-files-from-sra-andor-ena" id="toc-download-fastq-files-from-sra-andor-ena" class="nav-link active" data-scroll-target="#download-fastq-files-from-sra-andor-ena">Download FASTQ files from SRA and/or ENA</a>
-  <ul class="collapse">
-  <li><a href="#choose-which-samples-to-download" id="toc-choose-which-samples-to-download" class="nav-link" data-scroll-target="#choose-which-samples-to-download">Choose which samples to download</a></li>
-  <li><a href="#paste-the-accession-number-into-ena" id="toc-paste-the-accession-number-into-ena" class="nav-link" data-scroll-target="#paste-the-accession-number-into-ena">Paste the accession number into ENA</a></li>
-  <li><a href="#click-the-fastq-file-links-to-download-them-directly." id="toc-click-the-fastq-file-links-to-download-them-directly." class="nav-link" data-scroll-target="#click-the-fastq-file-links-to-download-them-directly.">Click the fastq file links to download them directly.</a></li>
-  <li><a href="#move-them-into-your-working-folder" id="toc-move-them-into-your-working-folder" class="nav-link" data-scroll-target="#move-them-into-your-working-folder">Move them into your working folder</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./download_from_ENA.html">Raw sequences to RNA counts</a></li><li class="breadcrumb-item"><a href="./download_from_ENA.html">Download FASTQ files from SRA and/or ENA</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./download_from_ENA.html">Raw sequences to RNA counts</a></li><li class="breadcrumb-item"><a href="./install_hisat2.html">Install Hisat2 for mapping</a></li></ol></nav></header>
 
 
 
 
-<section id="download-fastq-files-from-sra-andor-ena" class="level1">
-<h1>Download FASTQ files from SRA and/or ENA</h1>
-<p>To download raw FASTQ files from SRA</p>
-<section id="choose-which-samples-to-download" class="level2">
-<h2 class="anchored" data-anchor-id="choose-which-samples-to-download">Choose which samples to download</h2>
-<p>Browse the files available at <a href="http://ncbi.nlm.nih.gov/sra/?term=SRP162992">NCBI SRA</a> and choose which files to download.</p>
-<p>Copy the Accession number for each file:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="SRA_accession.png" class="img-fluid figure-img"></p>
-<figcaption>Copy accession number</figcaption>
-</figure>
-</div>
-</section>
-<section id="paste-the-accession-number-into-ena" class="level2">
-<h2 class="anchored" data-anchor-id="paste-the-accession-number-into-ena">Paste the accession number into ENA</h2>
-<p>Paste the accession number into the <a href="https://www.ebi.ac.uk/ena/browser/home">European Nucleotide Archive</a> in the top right hand search boxes.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="ENA_search_accession.png" class="img-fluid figure-img"></p>
-<figcaption>Search for accession number</figcaption>
-</figure>
-</div>
-</section>
-<section id="click-the-fastq-file-links-to-download-them-directly." class="level2">
-<h2 class="anchored" data-anchor-id="click-the-fastq-file-links-to-download-them-directly.">Click the fastq file links to download them directly.</h2>
-<p>You want to click both fastq files (e.g.&nbsp;SRR7945367_1.fastq.gz and SRR7945367_2.fastq.gz) to download them.</p>
-<p>The file ending _1 is the <em>forward read</em> and the file ending _2 is the <em>reverse read</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Download_files.png" class="img-fluid figure-img"></p>
-<figcaption>Download files</figcaption>
-</figure>
-</div>
-</section>
-<section id="move-them-into-your-working-folder" class="level2">
-<h2 class="anchored" data-anchor-id="move-them-into-your-working-folder">Move them into your working folder</h2>
-<p>You can now move these files into your <strong>working folder</strong> - this is the folder on your computer where you are also writing your R and Python code.</p>
-<p>Keep a record of which sample is which - I recommend an Excel Spreadsheet with the accession number and which file it is.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Study Accession</th>
-<th>Read accession</th>
-<th>Sample</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SRP162992</td>
-<td>SRR7945367</td>
-<td>Leishmania braziliensis metacyclic promastigote</td>
-</tr>
-</tbody>
-</table>
+<p>#&nbsp;Install Hisat2 for mapping</p>
+<p>To install Hisat2</p>
+<p>Download the binary from (The Hisat2 Github page)[https://daehwankimlab.github.io/hisat2/download/]. For Mac, it is the OSX_x86_64 version.</p>
+<p>Double click to decompress the file to give you a folder</p>
+<p>Move the folder to somewhere safe in your Documents</p>
+<p>Open the folder using the terminal</p>
+<p>Check it works</p>
+<p>Run <code>./hisat2 -help</code></p>
+<p>You may need to unblock from Apple security settings</p>
+<p>Once it works, you want to add this folder to your path (so you can access the program from anywhere)</p>
+<p>This command will give you the full folder location:</p>
+<p><code>pwd</code></p>
+<p>For me this was: /Users/lizzie/Documents/Kingston/Bioinformatics_general/hisat2-2.2.1</p>
+<p>Then use this folder location (replace with your own) and run the following two lines:</p>
+<p><code>echo 'export PATH="$PATH:/Users/lizzie/Documents/Kingston/Bioinformatics_general/hisat2-2.2.1"' &gt;&gt; ~/.zshrc</code> <code>source ~/.zshrc</code></p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -237,14 +180,14 @@ Caution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Make sure the accession matches what is on the <strong>filename</strong> so that you don’t get confused - eg. SRR7945367 for SRR7945367_1.fastq.gz</p>
-<p>This is usually the <strong>Run Accession</strong></p>
+<p>The <code>&gt;&gt;</code> being doubled is really important here.</p>
+<p><code>&gt;&gt;</code> will take the result and add it to the bottom of the ~/.zshrc file, <code>&gt;</code> would <strong>overwrite</strong> the file.</p>
 </div>
 </div>
+<p>You can then open the terminal from a different folder, and you should be able to run: <code>hisat2 - help</code></p>
+<p>This means the installation has worked.</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -65,6 +65,17 @@
     ]
   },
   {
+    "objectID": "install_hisat2.html",
+    "href": "install_hisat2.html",
+    "title": "RNASeq_Differential_Expression",
+    "section": "",
+    "text": "# Install Hisat2 for mapping\nTo install Hisat2\nDownload the binary from (The Hisat2 Github page)[https://daehwankimlab.github.io/hisat2/download/]. For Mac, it is the OSX_x86_64 version.\nDouble click to decompress the file to give you a folder\nMove the folder to somewhere safe in your Documents\nOpen the folder using the terminal\nCheck it works\nRun ./hisat2 -help\nYou may need to unblock from Apple security settings\nOnce it works, you want to add this folder to your path (so you can access the program from anywhere)\nThis command will give you the full folder location:\npwd\nFor me this was: /Users/lizzie/Documents/Kingston/Bioinformatics_general/hisat2-2.2.1\nThen use this folder location (replace with your own) and run the following two lines:\necho 'export PATH=\"$PATH:/Users/lizzie/Documents/Kingston/Bioinformatics_general/hisat2-2.2.1\"' &gt;&gt; ~/.zshrc source ~/.zshrc\n\n\n\n\n\n\nCaution\n\n\n\nThe &gt;&gt; being doubled is really important here.\n&gt;&gt; will take the result and add it to the bottom of the ~/.zshrc file, &gt; would overwrite the file.\n\n\nYou can then open the terminal from a different folder, and you should be able to run: hisat2 - help\nThis means the installation has worked.",
+    "crumbs": [
+      "Raw sequences to RNA counts",
+      "Install Hisat2 for mapping"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Differential Expression in Python/R",
