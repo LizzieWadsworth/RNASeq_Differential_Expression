@@ -16,6 +16,7 @@ website:
       - section: Raw sequences to RNA counts
         contents:
           - download_from_ENA.qmd
+          - install_hisat2.qmd
 
 format:
   html:
