@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -146,8 +181,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#install-hisat2-for-mapping" id="toc-install-hisat2-for-mapping" class="nav-link active" data-scroll-target="#install-hisat2-for-mapping">Install Hisat2 for mapping</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./download_from_ENA.html">Raw sequences to RNA counts</a></li><li class="breadcrumb-item"><a href="./install_hisat2.html">Install Hisat2 for mapping</a></li></ol></nav></header>
@@ -155,21 +196,30 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>#&nbsp;Install Hisat2 for mapping</p>
+<section id="install-hisat2-for-mapping" class="level1">
+<h1>Install Hisat2 for mapping</h1>
 <p>To install Hisat2</p>
-<p>Download the binary from (The Hisat2 Github page)[https://daehwankimlab.github.io/hisat2/download/]. For Mac, it is the OSX_x86_64 version.</p>
+<p>Download the binary from <a href="https://daehwankimlab.github.io/hisat2/download/">The Hisat2 Github page</a>. For Mac, it is the OSX_x86_64 version.</p>
 <p>Double click to decompress the file to give you a folder</p>
 <p>Move the folder to somewhere safe in your Documents</p>
-<p>Open the folder using the terminal</p>
+<p>Open the folder using the terminal:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="OpenTerminalAtFolder.png" class="img-fluid figure-img"></p>
+<figcaption>Open Terminal at Folder</figcaption>
+</figure>
+</div>
 <p>Check it works</p>
-<p>Run <code>./hisat2 -help</code></p>
-<p>You may need to unblock from Apple security settings</p>
+<p>Run</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./hisat2</span> <span class="at">-help</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You may need to unblock from Apple security settings (Apple System setting -&gt; Security and Privacy -&gt; Allow Anyway)</p>
 <p>Once it works, you want to add this folder to your path (so you can access the program from anywhere)</p>
 <p>This command will give you the full folder location:</p>
-<p><code>pwd</code></p>
-<p>For me this was: /Users/lizzie/Documents/Kingston/Bioinformatics_general/hisat2-2.2.1</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For me this was: <code>/Users/lizzie/Documents/Kingston/Bioinformatics_general/hisat2-2.2.1</code></p>
 <p>Then use this folder location (replace with your own) and run the following two lines:</p>
-<p><code>echo 'export PATH="$PATH:/Users/lizzie/Documents/Kingston/Bioinformatics_general/hisat2-2.2.1"' &gt;&gt; ~/.zshrc</code> <code>source ~/.zshrc</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">'export PATH="$PATH:/Users/lizzie/Documents/Kingston/Bioinformatics_general/hisat2-2.2.1"'</span> <span class="op">&gt;&gt;</span> ~/.zshrc</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.zshrc</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -184,10 +234,12 @@ Caution
 <p><code>&gt;&gt;</code> will take the result and add it to the bottom of the ~/.zshrc file, <code>&gt;</code> would <strong>overwrite</strong> the file.</p>
 </div>
 </div>
-<p>You can then open the terminal from a different folder, and you should be able to run: <code>hisat2 - help</code></p>
+<p>You can then open the terminal from a different folder, and you should be able to run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">hisat2</span> <span class="at">-help</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This means the installation has worked.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
