@@ -1,0 +1,6 @@
+---
+title: "Differential Expression in Python/R"
+---
+
+Work in Progress - looking at using RNA sequencing data to do differential expression analyses. 
+

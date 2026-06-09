@@ -1,0 +1,77 @@
+[
+  {
+    "objectID": "download_from_ENA.html",
+    "href": "download_from_ENA.html",
+    "title": "Download FASTQ files from SRA and/or ENA",
+    "section": "",
+    "text": "To download raw FASTQ files from SRA\n\n\nBrowse the files available at NCBI SRA and choose which files to download.\nCopy the Accession number for each file:\n\n\n\nCopy accession number\n\n\n\n\n\nPaste the accession number into the European Nucleotide Archive in the top right hand search boxes.\n\n\n\nSearch for accession number\n\n\n\n\n\nYou want to click both fastq files (e.g. SRR7945367_1.fastq.gz and SRR7945367_2.fastq.gz) to download them.\nThe file ending _1 is the forward read and the file ending _2 is the reverse read.\n\n\n\nDownload files\n\n\n\n\n\nYou can now move these files into your working folder - this is the folder on your computer where you are also writing your R and Python code.\nKeep a record of which sample is which - I recommend an Excel Spreadsheet with the accession number and which file it is.\n\n\n\n\n\n\n\n\nStudy Accession\nRead accession\nSample\n\n\n\n\nSRP162992\nSRR7945367\nLeishmania braziliensis metacyclic promastigote",
+    "crumbs": [
+      "Raw sequences to RNA counts",
+      "Download FASTQ files from SRA and/or ENA"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Differential Expression in Python/R",
+    "section": "",
+    "text": "Work in Progress - looking at using RNA sequencing data to do differential expression analyses.",
+    "crumbs": [
+      "About RNASeq"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "RNASeq_Differential_Expression",
+    "section": "",
+    "text": "Add introduction to RNA Seq - Why - What can you tell - What can you not tell",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "download_from_ENA.html#choose-which-samples-to-download",
+    "href": "download_from_ENA.html#choose-which-samples-to-download",
+    "title": "Download FASTQ files from SRA and/or ENA",
+    "section": "",
+    "text": "Browse the files available at NCBI SRA and choose which files to download.\nCopy the Accession number for each file:\n\n\n\nCopy accession number",
+    "crumbs": [
+      "Raw sequences to RNA counts",
+      "Download FASTQ files from SRA and/or ENA"
+    ]
+  },
+  {
+    "objectID": "download_from_ENA.html#paste-the-accession-number-into-ena",
+    "href": "download_from_ENA.html#paste-the-accession-number-into-ena",
+    "title": "Download FASTQ files from SRA and/or ENA",
+    "section": "",
+    "text": "Paste the accession number into the European Nucleotide Archive in the top right hand search boxes.\n\n\n\nSearch for accession number",
+    "crumbs": [
+      "Raw sequences to RNA counts",
+      "Download FASTQ files from SRA and/or ENA"
+    ]
+  },
+  {
+    "objectID": "download_from_ENA.html#click-the-fastq-file-links-to-download-them-directly.",
+    "href": "download_from_ENA.html#click-the-fastq-file-links-to-download-them-directly.",
+    "title": "Download FASTQ files from SRA and/or ENA",
+    "section": "",
+    "text": "You want to click both fastq files (e.g. SRR7945367_1.fastq.gz and SRR7945367_2.fastq.gz) to download them.\nThe file ending _1 is the forward read and the file ending _2 is the reverse read.\n\n\n\nDownload files",
+    "crumbs": [
+      "Raw sequences to RNA counts",
+      "Download FASTQ files from SRA and/or ENA"
+    ]
+  },
+  {
+    "objectID": "download_from_ENA.html#move-them-into-your-working-folder",
+    "href": "download_from_ENA.html#move-them-into-your-working-folder",
+    "title": "Download FASTQ files from SRA and/or ENA",
+    "section": "",
+    "text": "You can now move these files into your working folder - this is the folder on your computer where you are also writing your R and Python code.\nKeep a record of which sample is which - I recommend an Excel Spreadsheet with the accession number and which file it is.\n\n\n\n\n\n\n\n\nStudy Accession\nRead accession\nSample\n\n\n\n\nSRP162992\nSRR7945367\nLeishmania braziliensis metacyclic promastigote",
+    "crumbs": [
+      "Raw sequences to RNA counts",
+      "Download FASTQ files from SRA and/or ENA"
+    ]
+  }
+]

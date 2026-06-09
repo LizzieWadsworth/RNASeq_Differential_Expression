@@ -1,0 +1,9 @@
+---
+title: "RNASeq_Differential_Expression"
+---
+
+Add introduction to RNA Seq
+- Why 
+- What can you tell
+- What can you **not** tell 
+
